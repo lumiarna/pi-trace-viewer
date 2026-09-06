@@ -1,18 +1,38 @@
 {
   "name": "pi-trace-viewer",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "description": "Live local session and LLM context viewer for pi",
+  "license": "MIT",
   "keywords": [
     "pi-package",
     "pi-extension",
     "llm-observability"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZKiteLM/pi-trace-viewer.git"
+  },
+  "homepage": "https://github.com/ZKiteLM/pi-trace-viewer#readme",
+  "bugs": {
+    "url": "https://github.com/ZKiteLM/pi-trace-viewer/issues"
+  },
+  "files": [
+    "assets/images/",
+    "src/",
+    "web/",
+    "README.zh.md",
+    "tsconfig.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "pi": {
     "extensions": [
       "./src/index.ts"
-    ]
+    ],
+    "video": "https://github.com/ZKiteLM/pi-trace-viewer/releases/download/v0.1.0/pi-trace-viewer-demo.mp4",
+    "image": "https://raw.githubusercontent.com/ZKiteLM/pi-trace-viewer/main/assets/images/realtime-session-viewport.png"
   },
   "scripts": {
     "check": "tsc --noEmit && vitest run",
